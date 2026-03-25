@@ -10,18 +10,5 @@ import { Posts } from './posts/posts';
   styleUrl: './app.scss'
 })
 export class App {
-  posts = [
-    {
-      id: 1,
-      user: 'John Doe',
-      content: 'Bla bla chocolade vla!',
-      comments: ['Wat stom!', 'Zo vervelend']
-    },
-    {
-      id: 2,
-      user: 'Jane Smith',
-      content: 'Japan here I come!',
-      comments: ['Enjoy!', 'Super!']
-    }
-  ]
+
 }
