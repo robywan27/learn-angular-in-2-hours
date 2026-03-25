@@ -1,1 +1,14 @@
-<p>{{userPosts | json}}</p>
+<div *ngFor="let post of userPosts">
+    <h2>{{post.user}}</h2>
+    <p>{{post.content}}</p>
+    
+    <button>Like</button>
+
+    <div>
+        <ul>
+            <li *ngFor="let comment of post.comments">{{comment}}</li>
+        </ul>
+        <input/>
+        <button>Comment</button>
+    </div>
+</div>
