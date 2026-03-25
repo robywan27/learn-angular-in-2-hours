@@ -9,4 +9,14 @@ import { Component, Input } from '@angular/core';
 })
 export class Posts {
   @Input() userPosts: any[] = [];
+  likedPosts: Set<number> = new Set();
+
+  likePost(id: number): void {
+    if (this.likedPosts.has(id)) {
+      this.likedPosts.delete(id);
+    }
+    else {
+      this.likedPosts.add(id);
+    }
+  }
 }
