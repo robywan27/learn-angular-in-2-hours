@@ -1,14 +1,4 @@
-<p>{{'Angula' | reverse}}</p>
-
-<div *appRoleBasedAccess="'Admin'">
-    <button>Edit User Settings</button>
-    <button>Manage Content</button>
-</div>
-
-<div *appRoleBasedAccess="'Editor'">
-    <button>Edit Post</button>
-    <button>Moderate Comments</button>
-</div>
+<p>{{'Angular' | reverse}}</p>
 
 <div *ngFor="let post of userPosts" class="post">
     <h2>{{post.user}}</h2>

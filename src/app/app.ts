@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Posts } from './posts/posts';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { Navigation } from "./navigation/navigation";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Posts],
+  imports: [RouterModule, Navigation],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
