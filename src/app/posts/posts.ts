@@ -3,10 +3,11 @@ import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PostsService } from '../posts';
 import { RoleBasedAccess } from '../role-based-access';
+import { ReversePipe } from '../reverse-pipe';
 
 @Component({
   selector: 'app-posts',
-  imports: [CommonModule, FormsModule, RoleBasedAccess],
+  imports: [CommonModule, FormsModule, RoleBasedAccess, ReversePipe],
   templateUrl: './posts.html',
   styleUrl: './posts.scss',
 })
